@@ -49,8 +49,8 @@ function Posts({ posts, intro, id }) {
                     <FeaturedImage
                       className={cx('image')}
                       image={image}
-                      width={340}
-                      height={340}
+                      width={232}
+                      height={130}
                       priority={i < appConfig.postsAboveTheFold}
                     />
                   </a>
