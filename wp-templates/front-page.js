@@ -18,7 +18,7 @@ import {
 } from 'components';
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
 
-const postsPerPage = 3;
+const postsPerPage = 12;
 
 export default function Component() {
   const { data, loading } = useQuery(Component.query, {
@@ -46,7 +46,7 @@ export default function Component() {
         title={siteTitle}
         description={siteDescription}
         menuItems={primaryMenu}
-      />
+      />        
 
       <Main className={styles.home}>
        
@@ -89,6 +89,7 @@ Your Free DIY Digital Marketing Compendium for Small Businesses!{' '}
             </Heading>
             <Posts posts={data.posts?.nodes} id="posts-list" />
             <Posts posts={data.posts?.nodes} id="posts-list" />
+            <Posts posts={filteredPosts} id="posts-list" />
           </section>
           <section className="cta">
             <CTA
