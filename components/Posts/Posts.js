@@ -50,7 +50,7 @@ function Posts({ posts, intro, id }) {
                       className={cx('image')}
                       image={image}
                       width={350}
-                      height={200}
+                      height={197}
                       priority={i < appConfig.postsAboveTheFold}
                     />
                   </a>
