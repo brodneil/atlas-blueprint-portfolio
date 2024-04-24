@@ -88,6 +88,7 @@ Your Free DIY Digital Marketing Compendium for Small Businesses!{' '}
               Latest Posts
             </Heading>
             <Posts posts={data.posts?.nodes} id="posts-list" />
+            <Posts posts={data.posts?.nodes} id="posts-list" />
           </section>
           <section className="cta">
             <CTA
